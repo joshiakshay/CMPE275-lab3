@@ -55,7 +55,7 @@
 			<groupId>org.glassfish.jersey.media</groupId>
 			<artifactId>jersey-media-multipart</artifactId>
 			<version>${jersey.version}</version>
-		</dependency>			
+		</dependency>
 
 		<!-- Spring 3 dependencies -->
 		<dependency>
@@ -69,11 +69,11 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 			<exclusions>
-			   <exclusion>
-			      <groupId>commons-logging</groupId>
-			      <artifactId>commons-logging</artifactId>
-			   </exclusion>
-			</exclusions>			
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -133,12 +133,12 @@
 		</dependency>
 
 		<!-- testing -->
-	    <!-- Jersey-client -->
+		<!-- Jersey-client -->
 		<dependency>
 			<groupId>org.glassfish.jersey.core</groupId>
 			<artifactId>jersey-client</artifactId>
-			<version>${jersey.version}</version>			
-		</dependency>			
+			<version>${jersey.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
@@ -149,7 +149,7 @@
 			<groupId>commons-beanutils</groupId>
 			<artifactId>commons-beanutils</artifactId>
 			<version>1.9.1</version>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
@@ -180,18 +180,24 @@
 			<artifactId>jersey-test-framework-provider-external</artifactId>
 			<version>2.5.1</version>
 		</dependency>
-		
-		<!-- LogBack dependencies --> 
+
+		<!-- LogBack dependencies -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<version>${logback.version}</version>
 		</dependency>
-		<dependency>                                    
-			<groupId>org.slf4j</groupId>                
-			<artifactId>jcl-over-slf4j</artifactId>     
-			<version>${jcloverslf4j.version}</version>  
-		</dependency>  				
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${jcloverslf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>r05</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
